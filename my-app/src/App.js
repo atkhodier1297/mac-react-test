@@ -23,3 +23,21 @@ function App() {
 }
 
 export default App;
+
+[fetch('')
+.then(response => {
+  return response.json()
+})
+.then(res => console.log(res))]
+
+[fetch('', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json;charset=utf-8'
+  },
+  body: JSON.stringify({})
+})
+.then(response => {
+  return response.json()
+})
+.then(res => console.log(res))]
